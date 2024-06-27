@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/style.css">
     <title>first Tailwind css website</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -20,13 +22,34 @@
             scroll-behavior: smooth;
             overflow-x: none;
         }
-        
+
+        #hero {
+            /* position: relative; */
+            height: 30em;
+            width: 100%;
+            background-color: #000000;
+            /* border-radius: 0 0 100% 100% / 0 0 50% 50%; */
+        }
+
+        #hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url("./images/dog-4.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: contain;
+            filter: opacity(0.5);
+            z-index: 0;
+            height: inherit;
+        }
     </style>
 </head>
 
 <body>
-    <nav id="navbar" class="p-2 w-full bg-orange-500 flex flex-row justify-evenly fixed">
-        <div><img src="" alt="error" class="bg-blue p-4"></div>
+    <nav id="navbar" class="p-2 w-full bg-orange-500 flex flex-row justify-evenly fixed z-10">
+        <div class=""><img src="images/logo.jpg" alt="error" class="size-12 bg-blue p-1 rounded-full"></div>
         <div
             class=" flex-col  lg:flex-row justify-center items-start lg:items-center gap-x-6 gap-y-2 lg:gap-y-0 hidden md:flex">
             <ul class="flex flex-row justify-center items-center gap-x-8">
@@ -43,8 +66,8 @@
                 Now: +923003006220</a>
         </div>
     </nav>
-    <section class="bg-indigo-950 flex flex-col items-center justify-center gap-y-4 py-16 pt-24 px-8">
-        <h2 class="max-w-[60em] text-white text-xl">Lorem ipsum dolor sit amet. | +934567896789</h2>
+    <section id="hero" class="bg-indigo-950 flex flex-col items-center justify-center gap-y-4 py-16 pt-24 px-8">
+        <h2 class="max-w-[60em] text-white text-xl">Lorem ipsum dolor sit amet. | +923003006220</h2>
         <p class="max-w-[60em] text-white text-lg text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Quos
             inventore asperiores, sint aut, ab unde eos
@@ -96,21 +119,91 @@
                 impedit ab, provident reprehenderit ad saepe deleniti placeat quibusdam! Laudantium.</p>
         </div>
         <div class="flex flex-col">
-            <ul class="grid grid-cols-2 items-center justify-start gap-4 p-8">
-                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
+            <ul class="grid grid-cols-1 items-start justify-start gap-4 p-2 lg:p-8 my-6">
+                <li
+                    class="flex flex-row gap-x-2 justify-left items-center text-sm lg:text-lg font-semibold tracking-wide p-2 mx-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                    Murder </li>
+                <li
+                    class="flex flex-row gap-x-2 justify-left items-center text-sm lg:text-lg font-semibold tracking-wide p-2 mx-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                    Protection </li>
+                <li
+                    class="flex flex-row gap-x-2 justify-left items-center text-sm lg:text-lg font-semibold tracking-wide p-2 mx-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                    Detection </li>
+                <li
+                    class="flex flex-row gap-x-2 justify-left  items-center text-sm lg:text-lg font-semibold tracking-wide p-2 mx-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                    Security </li>
+                <li
+                    class="flex flex-row gap-x-2 justify-left  items-center text-sm lg:text-lg font-semibold tracking-wide p-2 mx-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                    Reliability </li>
+                <li
+                    class="flex flex-row gap-x-2 justify-left  items-center text-sm lg:text-lg font-semibold tracking-wide p-2 mx-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                    Courage </li>
+                <li
+                    class="flex flex-row gap-x-2 justify-left  items-center text-sm lg:text-lg font-semibold tracking-wide p-2 mx-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                    Obedinece </li>
+                <li
+                    class="flex flex-row gap-x-2 justify-left  items-center text-sm lg:text-lg font-semibold tracking-wide p-2 mx-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                    Intellignece </li>
+                <li
+                    class="flex flex-row gap-x-2 justify-left  items-center text-sm lg:text-lg font-semibold tracking-wide p-2 mx-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                    Tracking </li>
+                <li
+                    class="flex flex-row gap-x-2 justify-left  items-center text-sm lg:text-lg font-semibold tracking-wide p-2 mx-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                    Attack </li>
             </ul>
         </div>
     </section>
-
+   
     <section class="grid grid-cols-1 lg:grid-cols-2 bg-indigo-950  gap-x-12 justify-center items-center">
         <div class="flex flex-col gap-5 py-12 px-14">
             <h2 class="text-orange-500 font-semibold text-2xl">Why Army Dogs?</h2>
@@ -124,7 +217,28 @@
         <div>
             <img src="" alt="image">
         </div>
-    </section>
+    </section> <section class="text-gray-600 body-font bg-indigo-950  ">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4 text-center">
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl tracking-wider text-3xl text-orange-500">2.7K</h2>
+              <p class="leading-relaxed text-white text-xl">Users</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl tracking-wider text-3xl text-orange-500">1.8K</h2>
+              <p class="leading-relaxed text-white text-xl">Subscribes</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl tracking-wider text-3xl text-orange-500">100%</h2>
+              <p class="leading-relaxed text-white text-xl">Satisfaction</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl tracking-wider text-3xl text-orange-500">4</h2>
+              <p class="leading-relaxed text-white text-xl">Awards</p>
+            </div>
+          </div>
+        </div>
+      </section>
     <section class="flex flex-col  px-14 py-10 gap-y-12">
         <div class="flex flex-col items-center justify-center  ">
             <h2 class=" max-w-[60em] my-6 text-indigo-950 font-semibold text-2xl text-center">Cities we serve.</h2>
@@ -167,7 +281,7 @@
             </div>
         </div>
         <div
-            class="border border-black grid grid-cols-2 lg:flex lg:flex-row gap-6 lg:gap-12 p-6 justify-center items-center">
+            class="border border-black grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row gap-6 lg:gap-12 p-6 justify-center items-center">
             <img src="" alt="image">
             <img src="" alt="image">
             <img src="" alt="image">
@@ -178,21 +292,25 @@
         <div>
             <h2 class="my-4 text-white font-bold text-3xl tracking-wider">Contact us</h2>
             <div class="py-8">
-                <p class="my-3 text-orange-500 text-xl font-semibold tracking-widest">+92345678910</p>
-                <p class="my-3 text-orange-500 text-xl font-semibold tracking-widest">+92345678910</p>
+                <p class="my-3 text-orange-500 text-xl font-semibold tracking-widest">+923003006220</p>
+                <p class="my-3 text-orange-500 text-xl font-semibold tracking-widest">+923332874135</p>
+                <p class="my-3 text-orange-500 text-xl font-semibold tracking-widest">+923213096661</p>
+                <p class="my-3 text-orange-500 text-xl font-semibold tracking-widest">+923456826761</p>
             </div>
             <div>
-                <p class="text-gray-400 text-lg">info@example.com</p>
+                <p class="text-gray-400 text-lg">wasimakram14071992@gmail.com</p>
             </div>
         </div>
         <form name="myForm" onsubmit="return sendMail()" class="my-4 py-8 flex flex-col gap-y-6">
             <div class="flex flex-col lg:flex-row gap-4">
-                <div> <input type="text" name="" id="" placeholder="Name" required class=" p-4 rounded-lg outline-none placeholder:text-indigo-950 text-lg font-semibold"></div>
-                <div> <input type="email" name="" id="" placeholder="Email address" required class=" p-4 rounded-lg outline-none placeholder:text-indigo-950 text-lg font-semibold">
+                <div> <input type="text" name="" id="" placeholder="Name" required
+                        class=" p-4 lg-p-4 rounded-lg outline-none placeholder:text-indigo-950 text-sm sm:text-lg font-semibold"></div>
+                <div> <input type="email" name="" id="" placeholder="Email address" required
+                        class=" p-4 rounded-lg outline-none placeholder:text-indigo-950 text-sm sm:text-lg font-semibold">
                 </div>
             </div>
-            <textarea rows="6" cols="12" name="" id="" placeholder="Message" required
-                    class="px-4 py-2 rounded-lg outline-none placeholder:text-indigo-950 text-lg font-semibold"></textarea>
+            <textarea rows="6" cols="12" name="" id="" placeholder="Message" required spellcheck="true"
+                class="px-4 py-2 rounded-lg outline-none placeholder:text-indigo-950 text-sm sm:text-lg font-semibold"></textarea>
             <input type="submit" value="SUBMIT"
                 class="bg-orange-500 hover:bg-orange-600 py-4 text-white text-base font-semibold tracking-widest cursor-pointer rounded-lg transition-all">
         </form>
