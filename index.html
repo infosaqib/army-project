@@ -6,24 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/style.css">
     <title>first Tailwind css website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            scroll-behavior: smooth;
+            overflow-x: none;
+        }
+        
+    </style>
 </head>
 
 <body>
-    <header class="p-2 w-full bg-orange-500 flex flex-row">
+    <nav id="navbar" class="p-2 w-full bg-orange-500 flex flex-row justify-evenly fixed">
         <div><img src="" alt="error" class="bg-blue p-4"></div>
-        <div><img src="" alt="image" class="bg-blue p-4"></div>
-    </header>
-    <section class="bg-indigo-950 flex flex-col items-center justify-center py-16 pt-24 px-8">
-        <h2 class="text-white text-xl">Lorem ipsum dolor sit amet. | +934567896789</h2>
-        <p class="text-white text-lg text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+        <div
+            class=" flex-col  lg:flex-row justify-center items-start lg:items-center gap-x-6 gap-y-2 lg:gap-y-0 hidden md:flex">
+            <ul class="flex flex-row justify-center items-center gap-x-8">
+                <li> <a class="p-3 text-white text-base tracking-wide font-semibold" href="/"> Home</a></li>
+                <li> <a class="p-3 text-white text-base tracking-wide font-semibold" href="/about.html"> About us</a>
+                </li>
+                <li> <a class="p-3 text-white text-base tracking-wide font-semibold" href=""> Our Services</a></li>
+                <li> <a class="p-3 text-white text-base tracking-wide font-semibold" href="/blog.html"> Blog</a></li>
+                <li> <a class="p-3 text-white text-base tracking-wide font-semibold" href="/contact.html"> Contact
+                        us</a></li>
+            </ul>
+            <a href="tel:+923003006220"
+                class="px-3 py-2 lg:py-3  rounded-[100px] bg-indigo-950 text-white text-base tracking-wide font-semibold">Call
+                Now: +923003006220</a>
+        </div>
+    </nav>
+    <section class="bg-indigo-950 flex flex-col items-center justify-center gap-y-4 py-16 pt-24 px-8">
+        <h2 class="max-w-[60em] text-white text-xl">Lorem ipsum dolor sit amet. | +934567896789</h2>
+        <p class="max-w-[60em] text-white text-lg text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Quos
             inventore asperiores, sint aut, ab unde eos
             corporis minus optio, repellendus perspiciatis. Animi dolorum laboriosam ad, dicta praesentium reprehenderit
             perferendis esse repellat, voluptatibus suscipit consectetur possimus in!</p>
-        <a href=""
-            class="py-2 px-4 m-4 text-white rounded-md border border-white hover:border-transparent hover:bg-slate-100/40 transition-all cursor-pointer ">Click
-            here</a>
+        <!-- <a href=""
+            class="max-w-[60em] py-2 px-4 m-4 text-white text-lg rounded-md border border-white hover:border-transparent hover:bg-slate-100/40 transition-all cursor-pointer ">Click
+            here</a> -->
     </section>
-    <section class="flex flex-col justify-center items-center gap-5 py-12 px-10">
+    <section class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-x-12 py-12 px-14">
         <div class="flex flex-col gap-8">
             <h2 class="text-indigo-950 font-semibold text-2xl">About Us</h2>
             <p class="text-gray-500 text-base leading-loose">Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing
@@ -39,7 +70,8 @@
         <div class="border border-black"><img src="" alt="error"></div>
     </section>
     <hr>
-    <section class="flex flex-col justify-center items-center gap-5 py-12 px-10">
+    <section class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center  gap-x-12 py-12 px-14">
+        <div class="border border-black"><img src="" alt="error"></div>
         <div class="flex flex-col gap-8">
             <h2 class="text-indigo-950 font-semibold text-2xl">Our Mission</h2>
             <p class="text-gray-500 text-base leading-loose">Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing
@@ -48,8 +80,9 @@
                 totam placeat possimus, dolor fugit molestias incidunt praesentium aut quod corrupti ab. Voluptatum
                 impedit ab, provident reprehenderit ad saepe deleniti placeat quibusdam! Laudantium.</p>
         </div>
+
     </section>
-    <section class="flex flex-col justify-center items-center gap-5 py-12 px-10">
+    <section class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center  gap-x-12 py-12 px-14">
         <div class="flex flex-col gap-8">
             <h2 class="text-indigo-950 font-semibold text-2xl">Our Services</h2>
             <p class="text-gray-500 text-base leading-loose">Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing
@@ -62,23 +95,24 @@
                 quam! Voluptas omnis at amet molestias nisi excepturi nesciunt eligendi, iure repellat ipsam voluptates
                 impedit ab, provident reprehenderit ad saepe deleniti placeat quibusdam! Laudantium.</p>
         </div>
+        <div class="flex flex-col">
+            <ul class="grid grid-cols-2 items-center justify-start gap-4 p-8">
+                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
+                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
+                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
+                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
+                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
+                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
+                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
+                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
+                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
+                <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
+            </ul>
+        </div>
     </section>
-    <section class="flex flex-col py-12 px-5">
-        <ul class="grid grid-cols-2 items-center justify-start gap-4 p-8">
-            <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-            <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-            <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-            <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-            <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-            <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-            <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-            <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-            <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-            <li class="text-lg font-semibold tracking-wide p-2 mx-4">✅Lorem</li>
-        </ul>
-    </section>
-    <section class="bg-indigo-950">
-        <div class="flex flex-col gap-5 py-12 px-10">
+
+    <section class="grid grid-cols-1 lg:grid-cols-2 bg-indigo-950  gap-x-12 justify-center items-center">
+        <div class="flex flex-col gap-5 py-12 px-14">
             <h2 class="text-orange-500 font-semibold text-2xl">Why Army Dogs?</h2>
             <p class="text-white text-base leading-loose">Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing
                 elit. Provident iure eligendi voluptates
@@ -91,31 +125,58 @@
             <img src="" alt="image">
         </div>
     </section>
-    <section class="flex flex-col  p-10 gap-y-12">
+    <section class="flex flex-col  px-14 py-10 gap-y-12">
         <div class="flex flex-col items-center justify-center  ">
-            <h2 class="my-6 text-indigo-950 font-semibold text-2xl text-center">Cities we serve.</h2>
-            <p class="my-6 text-gray-500 text-base leading-loose text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, harum! Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quod praesentium autem quam ab consequatur debitis eveniet eligendi unde magni.</p>
+            <h2 class=" max-w-[60em] my-6 text-indigo-950 font-semibold text-2xl text-center">Cities we serve.</h2>
+            <p class=" max-w-[60em] my-6 text-gray-500 text-base leading-loose text-center">Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Iure, harum! Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Assumenda, quod praesentium autem quam ab consequatur debitis eveniet eligendi unde
+                magni.</p>
         </div>
-        <div class="flex flex-col px-10 py-4">
-            <ul>
-                <li class="list-disc font-semibold my-3">USA</li>
-                <li class="list-disc font-semibold my-3">UK</li>
-                <li class="list-disc font-semibold my-3">UAE</li>
-                <li class="list-disc font-semibold my-3">Euorpe</li>
-                <li class="list-disc font-semibold my-3">Africa</li>
-                <li class="list-disc font-semibold my-3">Asia</li>
-            </ul>
+        <div class="flex flex-col lg:flex-row lg:justify-evenly items-center">
+            <div class="flex flex-col px-14 py-4">
+                <ul>
+                    <h2 class="text-indigo-950 font-semibold text-xl my-6">Sindh</h2>
+                    <li class="list-disc font-semibold my-3 ml-8">Karachi</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Hyderabad</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Sukkur</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Larkana</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Mirput Khas</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Nawabshah</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Jamshror</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Shikarpur</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Jacobabad</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Thatta</li>
+                </ul>
+            </div>
+            <div class="flex flex-col px-14 py-4">
+                <ul>
+                    <h2 class="text-indigo-950 font-semibold text-xl my-6">Punjab</h2>
+                    <li class="list-disc font-semibold my-3 ml-8">Lahore</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Faisalabad</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Rawalpindi</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Multan</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Gujranwala</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Sialkot</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Bahawalpur</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Sargooda</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Sheikhupura</li>
+                    <li class="list-disc font-semibold my-3 ml-8">Okara</li>
+                </ul>
+            </div>
         </div>
-        <div class="border border-black grid grid-cols-2 p-6 justify-center items-center">
+        <div
+            class="border border-black grid grid-cols-2 lg:flex lg:flex-row gap-6 lg:gap-12 p-6 justify-center items-center">
             <img src="" alt="image">
             <img src="" alt="image">
             <img src="" alt="image">
             <img src="" alt="image">
         </div>
     </section>
-    <footer class="p-10 bg-indigo-950">
+    <footer class="py-10 px-14 bg-indigo-950 flex flex-col lg:flex-row lg:justify-evenly items-center">
         <div>
-            <h2 class="my-4 text-white font-bold text-2xl tracking-wider">Contact us</h2>
+            <h2 class="my-4 text-white font-bold text-3xl tracking-wider">Contact us</h2>
             <div class="py-8">
                 <p class="my-3 text-orange-500 text-xl font-semibold tracking-widest">+92345678910</p>
                 <p class="my-3 text-orange-500 text-xl font-semibold tracking-widest">+92345678910</p>
@@ -124,13 +185,19 @@
                 <p class="text-gray-400 text-lg">info@example.com</p>
             </div>
         </div>
-        <form class="my-4 py-8 flex flex-col gap-y-6">
-            <input type="text" name="" id="" placeholder="Name" class="p-4 rounded-lg outline-none">
-            <input type="email" name="" id="" placeholder="Email address" class="p-4 rounded-lg outline-none">
-            <textarea rows="6" name="" id="" placeholder="Message" class="px-4 py-2 rounded-lg outline-none"></textarea>
-            <input type="submit" value="SUBMIT" class="bg-orange-500 hover:bg-orange-600 py-5 text-white text-base font-semibold tracking-widest cursor-pointer rounded-lg transition-all">
+        <form name="myForm" onsubmit="return sendMail()" class="my-4 py-8 flex flex-col gap-y-6">
+            <div class="flex flex-col lg:flex-row gap-4">
+                <div> <input type="text" name="" id="" placeholder="Name" required class=" p-4 rounded-lg outline-none placeholder:text-indigo-950 text-lg font-semibold"></div>
+                <div> <input type="email" name="" id="" placeholder="Email address" required class=" p-4 rounded-lg outline-none placeholder:text-indigo-950 text-lg font-semibold">
+                </div>
+            </div>
+            <textarea rows="6" cols="12" name="" id="" placeholder="Message" required
+                    class="px-4 py-2 rounded-lg outline-none placeholder:text-indigo-950 text-lg font-semibold"></textarea>
+            <input type="submit" value="SUBMIT"
+                class="bg-orange-500 hover:bg-orange-600 py-4 text-white text-base font-semibold tracking-widest cursor-pointer rounded-lg transition-all">
         </form>
     </footer>
+    <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
