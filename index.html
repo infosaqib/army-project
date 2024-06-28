@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/style.css">
-    <title>first Tailwind css website</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Army Dog Center PK</title>
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
 
     <style>
         * {
@@ -20,38 +22,22 @@
             height: 100%;
             width: 100%;
             scroll-behavior: smooth;
-            overflow-x: hidden;
         }
 
         #hero {
-            /* position: relative; */
-            height: 30em;
+            height: 100%;
             width: 100%;
             background-color: #000000;
-            background-image: url("./images/hero.jpg");
+            background-image: url("./images/herdo.webp");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
-            background-size: contain;
-            /* border-radius: 0 0 100% 100% / 0 0 50% 50%; */
+            background-size: cover;
         }
-/* 
-        #hero::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background-image: url("./images/dog-4.png");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            background-size: contain;
-            filter: opacity(0.5);
-            z-index: 0;
-            height: inherit;
-        } */
 
         #header.show {
             opacity: 1;
+            display: flex;
         }
 
         #overlay {
@@ -59,7 +45,7 @@
             display: none;
             transition: all ease 1s;
         }
-        
+
         #overlay.show {
             display: block;
             position: absolute;
@@ -71,92 +57,103 @@
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
+
+        @media screen and (max-width: 800px) {
+            #header {
+                opacity: 0;
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            #menubar {
+                opacity: 0;
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <nav id="navbar" class="py-2 px-10 w-full bg-orange-500 flex flex-row justify-between fixed z-10">
-        <div class=""><img src="images/logo.jpg" alt="error" class="size-12 bg-blue p-1 rounded-full"></div>
+    <nav id="navbar" class="py-4 px-10 w-full bg-orange-500 flex flex-row justify-between fixed z-10">
+        <div class=""><img src="images/logo.webp" alt="error" class="size-12 bg-blue p-1 rounded-full"></div>
         <div id="header"
-            class="flex flex-col  md:flex-row justify-center items-start md:items-center md:gap-x-6 gap-y-8 md:gap-y-0 absolute top-16 right-0 md:static opacity-0 md:opacity-100">
+            class="flex flex-col  md:flex-row justify-center items-start md:items-center md:gap-x-6 gap-y-8 md:gap-y-0 absolute top-20 right-0 md:static md:opacity-100">
             <ul
-                class="flex flex-col md:flex-row bg-indigo-700 md:bg-transparent justify-start md:justify-center items-start md:items-center gap-x-8 gap-y-5 md:gap-y-0 py-6 sm:py-10 md:py-0 px-12 sm:px-20 md:px-0 ">
-                <li> <a class="p-3 text-white text-base md:text-lg tracking-wide font-semibold" href="/"> Home</a></li>
-                <li> <a class="p-3 text-white text-base md:text-lg  tracking-wide font-semibold" href="/about.html">
+                class="flex flex-col md:flex-row bg-indigo-700 md:bg-transparent justify-start md:justify-center items-start md:items-center gap-x-4 gap-y-5 md:gap-y-0 py-6 sm:py-10 md:py-0 px-12 sm:px-20 md:px-0 ">
+                <li> <a class="p-3 text-white text-base tracking-wide font-semibold" href="/"> Home</a></li>
+                <li> <a class="p-3 text-white text-base  tracking-wide font-semibold" href="about.html">
                         About us</a>
                 </li>
-                <li> <a class="p-3 text-white text-base md:text-lg tracking-wide font-semibold" href=""> Our
-                        Services</a></li>
-                <li> <a class="p-3 text-white text-base md:text-lg  tracking-wide font-semibold" href="/blog.html">
+                <!-- <li> <a class="p-3 text-white text-base  tracking-wide font-semibold" href=""> Our
+                        Services</a></li> -->
+                <li> <a class="p-3 text-white text-base  tracking-wide font-semibold" href="blog.html">
                         Blog</a></li>
-                <li> <a class="p-3 text-white text-base md:text-lg  tracking-wide font-semibold" href="/contact.html">
+                <li> <a class="p-3 text-white text-base   tracking-wide font-semibold" href="contact.html">
                         Contact
                         us</a></li>
 
                 <a href="tel:+923003006220"
-                    class="px-3 py-2 lg:py-3  rounded-[100px] bg-transparent md:bg-indigo-950 border-2  border-indigo-950 text-white text-base md:text-lg  tracking-wide font-semibold">Call
+                    class="px-3 py-2 mx-4 rounded-[100px] bg-transparent md:bg-indigo-950 border-2  border-indigo-950 text-white text-sm md:text-base  tracking-wide font-semibold">Call
                     Now: +923003006220</a>
             </ul>
         </div>
-        <div class="flex place-items-center"><svg onclick="return showMenu()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="#fff" class="size-6 cursor-pointer">
+        <div class="flex place-items-center" id="menubar"><svg onclick="return showMenu()"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff"
+                class="size-6 cursor-pointer ">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
         </div>
     </nav>
     <section id="hero" class="bg-indigo-950 flex flex-col items-center justify-center gap-y-4 py-16 pt-24 px-8">
-        <h2 class="max-w-[60em] text-white text-xl">Lorem ipsum dolor sit amet. | +923003006220</h2>
-        <p class="max-w-[60em] text-white text-lg text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Quos
-            inventore asperiores, sint aut, ab unde eos
-            corporis minus optio, repellendus perspiciatis. Animi dolorum laboriosam ad, dicta praesentium reprehenderit
-            perferendis esse repellat, voluptatibus suscipit consectetur possimus in!</p>
+        <h2 data-aos="fade-up" class="max-w-[60em] text-white text-xl sm:text-4xl">Army Dog Center PK</h2>
+        <p data-aos="fade-up" class="max-w-[60em] text-white text-base lg:text-xl text-center">The Army Dog Center in
+            Pakistan assists in emergencies such as robberies, murders, kidnappings, and other incidents. Our mission is
+            to help you by using our trained dogs to find evidence and clues. You can rely on us because your safety is
+            our top priority. We ensure we are available around the clock, anywhere and anytime you need us. Your
+            satisfaction is important to us, and we have a dedicated team working to assist you.</p>
         <!-- <a href=""
             class="max-w-[60em] py-2 px-4 m-4 text-white text-lg rounded-md border border-white hover:border-transparent hover:bg-slate-100/40 transition-all cursor-pointer ">Click
             here</a> -->
     </section>
     <section class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-x-12 py-16 px-6 sm:px-14">
-        <div class="flex flex-col gap-8">
+        <div data-aos="fade-right" class="flex flex-col gap-8">
             <h2 class="text-indigo-950 font-semibold text-2xl sm:text-6xl">About Us</h2>
-            <p class="text-gray-500 text-base leading-loose">Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing
-                elit. Provident iure eligendi voluptates
-                aspernatur quidem vitae maiores aliquid voluptatibus perferendis dolorem accusantium beatae suscipit quo
-                totam placeat possimus, dolor fugit molestias incidunt praesentium aut quod corrupti ab. Voluptatum
-                soluta officia numquam quas, eveniet alias nisi neque aliquam, reiciendis voluptatem illum autem
-                molestiae consequatur sequi error aliquid, delectus deserunt tenetur facere voluptates velit cum est
-                magni facilis. Eligendi quis libero facilis? Recusandae, quos quidem. Eligendi molestiae omnis ratione
-                quam! Voluptas omnis at amet molestias nisi excepturi nesciunt eligendi, iure repellat ipsam voluptates
-                impedit ab, provident reprehenderit ad saepe deleniti placeat quibusdam! Laudantium.</p>
+            <p class="text-gray-500 text-base lg:text-xl leading-loose">The Army Dog Center in Pakistan is dedicated to
+                assisting you during emergencies such as robberies, murders, kidnappings, and other incidents. Our
+                mission is to aid you by deploying our trained dogs to uncover evidence and clues. We are committed to
+                providing support when someone is apprehended, a theft occurs, or a murder happens. You can count on us
+                for your safety, as we prioritize your protection and ensure round-the-clock availability, wherever and
+                whenever you need us. Your satisfaction is crucial to us, and we have a team of trained staff available
+                at all times to assist you.</p>
         </div>
-        <div class="flex items-center justify-center"><img src="images/dog-6.png" alt="error" class="mr-12 sm:mr-0">
+        <div data-aos="fade-left" class="flex items-center justify-center"><img src="images/dog-6.webp" alt="error"
+                class="mr-12 sm:mr-0">
         </div>
     </section>
     <section class="flex flex-col-reverse lg:flex-row justify-center items-center  gap-x-12 py-16 px-6 sm:px-14">
-        <div class="flex items-center justify-center"><img src="images/dog-4.png" alt="error"></div>
-        <div class="flex flex-col gap-8">
+        <div data-aos="fade-right" class="lg:w-[50%] flex items-center justify-center"><img src="images/dog-4.webp"
+                alt="error"></div>
+        <div data-aos="fade-left" class="lg:w-[50%] flex flex-col gap-8">
             <h2 class="text-indigo-950 font-semibold text-2xl sm:text-6xl">Our Mission</h2>
-            <p class="text-gray-500 text-base leading-loose">Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing
-                elit. Provident iure eligendi voluptates
-                aspernatur quidem vitae maiores aliquid voluptatibus perferendis dolorem accusantium beatae suscipit quo
-                totam placeat possimus, dolor fugit molestias incidunt praesentium aut quod corrupti ab. Voluptatum
-                impedit ab, provident reprehenderit ad saepe deleniti placeat quibusdam! Laudantium.</p>
+            <p class="text-gray-500 text-base lg:text-xl leading-loose">Our primary mission is to support investigations
+                by identifying and uncovering criminal activities. We strive to maintain a peaceful environment in
+                society and protect residents from any form of harm by gathering evidence and apprehending perpetrators.
+            </p>
         </div>
 
     </section>
     <section class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center  gap-x-12 py-16 px-6 sm:px-14">
-        <div class="flex flex-col gap-8">
+        <div data-aos="fade-right" class="flex flex-col gap-8">
             <h2 class="text-indigo-950 font-semibold text-2xl sm:text-6xl">Our Services</h2>
-            <p class="text-gray-500 text-base leading-loose">Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing
-                elit. Provident iure eligendi voluptates
-                aspernatur quidem vitae maiores aliquid voluptatibus perferendis dolorem accusantium beatae suscipit quo
-                totam placeat possimus, dolor fugit molestias incidunt praesentium aut quod corrupti ab. Voluptatum
-                soluta officia numquam quas, eveniet alias nisi neque aliquam, reiciendis voluptatem illum autem
-                molestiae consequatur sequi error aliquid, delectus deserunt tenetur facere voluptates velit cum est
-                magni facilis. Eligendi quis libero facilis? Recusandae, quos quidem. Eligendi molestiae omnis ratione
-                quam! Voluptas omnis at amet molestias nisi excepturi nesciunt eligendi, iure repellat ipsam voluptates
-                impedit ab, provident reprehenderit ad saepe deleniti placeat quibusdam! Laudantium.</p>
+            <p class="text-gray-500 text-base lg:text-xl leading-loose">The Army Dog Center has been serving the
+                community for the past ten years. We offer a wide range of services to citizens across all provinces and
+                cities in Pakistan. While there are many dog centers providing services in the country, the Army Dog
+                Center community is recognized for its expertise. We have highly trained staff ready to address your
+                urgent concerns. Therefore, the Army Dog Center is the best choice for you. Our center boasts a large
+                number of highly trained dogs that have consistently assisted in investigations involving:</p>
         </div>
-        <div class="flex flex-col">
+        <div data-aos="fade-left" class="flex flex-col">
             <ul class="grid grid-cols-2 items-start justify-start gap-2 sm:p-8 my-6">
                 <li
                     class="flex flex-row gap-x-2 justify-left items-center text-sm lg:text-lg font-semibold tracking-wide p-2 mx-4">
@@ -253,21 +250,24 @@
     </section>
 
     <section class="grid grid-cols-1 lg:grid-cols-2 bg-indigo-950  gap-x-12 justify-center items-center">
-        <div class="flex flex-col gap-5 py-16 px-6 sm:px-14">
+        <div data-aos="fade-right" class="flex flex-col gap-5 py-16 px-6 sm:px-14">
             <h2 class="text-orange-500 font-semibold text-2xl sm:text-6xl">Why Army Dogs?</h2>
-            <p class="text-white text-base leading-loose">Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing
-                elit. Provident iure eligendi voluptates
-                aspernatur quidem vitae maiores aliquid voluptatibus perferendis dolorem accusantium beatae suscipit quo
-                totam placeat possimus, dolor fugit molestias incidunt praesentium aut quod corrupti ab. Voluptatum
-                soluta officia numquam quas, eveniet alias nisi neque aliquam, reiciendis voluptatem illum autem
-                molestiae consequatur sequi error aliquid, delectus deserunt tenetur facere voluptates velit cum est</p>
+            <p class="text-white text-base lg:text-xl leading-loose">You can trust our dogs because they are not merely
+                seen as animals but valued and respected as soldiers on four legs. These dogs possess exceptional skills
+                and abilities to search for evidence in cases of murder, theft, kidnapping, and other incidents. Each
+                dog is trained for specific tasks, with remarkable capabilities and an incredible sense of smell to
+                detect bombs before they detonate. Their contributions are invaluable, making them precious assets.
+                These dogs perform like soldiers in every respect and are crucial in warfare. They are trained to detect
+                decomposition, allowing them to locate body parts, bones, blood, and tissues. Our drug detection dogs
+                use an aggressive alert mechanism to identify the presence of drugs by smell, making them an essential
+                part of the armed forces.</p>
         </div>
-        <div class="flex justify-center items-center">
-            <img class="h-48 sm:h-64" src="images/dog-2.png" alt="image">
+        <div data-aos="fade-left" class="flex justify-center items-center">
+            <img class="h-48 sm:h-64" src="images/dog-2.webp" alt="image">
         </div>
     </section>
     <section class="text-gray-600 body-font bg-indigo-950  ">
-        <div class="container px-5 py-24 mx-auto">
+        <div data-aos="fade-up" class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap -m-4 text-center">
                 <div class="p-4 sm:w-1/4 w-1/2">
                     <h2 class="title-font font-medium sm:text-4xl tracking-wider text-3xl text-orange-500">2.7K</h2>
@@ -289,16 +289,15 @@
         </div>
     </section>
     <section class="flex flex-col  py-16 px-6 sm:px-14 gap-y-12">
-        <div class="flex flex-col items-center justify-center  ">
+        <div data-aos="fade-up" class="flex flex-col items-center justify-center  ">
             <h2 class=" max-w-[60em] my-6 text-indigo-950 font-semibold text-2xl sm:text-6xl text-center">Cities we
                 serve.</h2>
-            <p class=" max-w-[60em] my-6 text-gray-500 text-base leading-loose text-center">Lorem ipsum dolor sit amet
-                consectetur
-                adipisicing elit. Iure, harum! Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Assumenda, quod praesentium autem quam ab consequatur debitis eveniet eligendi unde
-                magni.</p>
+            <p class=" max-w-[60em] my-6 text-gray-500 text-base lg:text-xl leading-loose text-center">We serve all
+                provinces of Pakistan, ensuring our presence throughout the country. We strive to be accessible from
+                every location, with offices in every city to guarantee our availability and support you in times of
+                need.</p>
         </div>
-        <div class="flex flex-col sm:flex-row sm:justify-evenly justify-start items-start">
+        <div data-aos="fade-up" class="flex flex-col sm:flex-row sm:justify-evenly justify-start items-start">
             <div class="flex flex-col py-16 px-6 sm:px-14">
                 <ul>
                     <h2 class="text-indigo-950 font-semibold text-xl my-6">Sindh</h2>
@@ -314,7 +313,7 @@
                     <li class="list-disc font-semibold my-3 ml-8">Thatta</li>
                 </ul>
             </div>
-            <div class="flex flex-col py-16 px-6 sm:px-14">
+            <div data-aos="fade-up" class="flex flex-col py-16 px-6 sm:px-14">
                 <ul>
                     <h2 class="text-indigo-950 font-semibold text-xl my-6">Punjab</h2>
                     <li class="list-disc font-semibold my-3 ml-8">Lahore</li>
@@ -330,16 +329,16 @@
                 </ul>
             </div>
         </div>
-        <div
+        <div data-aos="fade-up"
             class="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row gap-6 lg:gap-12 p-6 justify-center items-center place-items-center">
-            <img class="h-28 sm:h-44" src="images/dog-12.png" alt="image">
-            <img class="h-28 sm:h-44" src="images/dog-5.png" alt="image">
-            <img class="h-28 sm:h-44" src="images/dog-9.png" alt="image">
-            <img class="h-28 sm:h-44" src="images/dog-1.png" alt="image">
+            <img class="h-28 sm:h-44" src="images/dog-12.webp" alt="image">
+            <img class="h-28 sm:h-44" src="images/dog-5.webp" alt="image">
+            <img class="h-28 sm:h-44" src="images/dog-9.webp" alt="image">
+            <img class="h-28 sm:h-44" src="images/dog-1.webp" alt="image">
         </div>
     </section>
     <footer class="py-16 px-6 sm:px-14 bg-indigo-950 flex flex-col lg:flex-row lg:justify-evenly items-center">
-        <div>
+        <div data-aos="fade-up">
             <h2 class="my-4 text-white font-bold text-2xl sm:text-6xl tracking-wider">Contact us</h2>
             <div class="py-8">
                 <p class="my-3 text-orange-500 text-base sm:text-xl font-semibold tracking-widest">+923003006220</p>
@@ -347,11 +346,11 @@
                 <p class="my-3 text-orange-500 text-base sm:text-xl font-semibold tracking-widest">+923213096661</p>
                 <p class="my-3 text-orange-500 text-base sm:text-xl font-semibold tracking-widest">+923456826761</p>
             </div>
-            <div>
+            <div data-aos="fade-up">
                 <p class="text-gray-400  text-sm sm:text-lg">wasimakram14071992@gmail.com</p>
             </div>
         </div>
-        <form name="myForm" onsubmit="return sendMail()" class="my-4 py-8 flex flex-col gap-y-6">
+        <form data-aos="fade-up" name="myForm" onsubmit="return sendMail()" class="my-4 py-8 flex flex-col gap-y-6">
             <div class="flex flex-col lg:flex-row gap-4">
                 <div> <input type="text" name="" id="" placeholder="Name" required
                         class=" p-4 lg-p-4 rounded-lg outline-none placeholder:text-indigo-950 text-sm sm:text-lg font-semibold">
@@ -371,7 +370,23 @@
     <div id="overlay" onclick="return hideMenu()"></div>
 
     <script src="script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            offset: 120,
+            duration: 1000,
+        });
+
+        (function () {
+            emailjs.init({
+                publicKey: "hj0ktJGt8eMelJAtC",
+            });
+        })();
+
+    </script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </body>
 
 </html>
