@@ -40,43 +40,63 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
-    <nav id="navbar" class="py-4 px-10 w-full bg-orange-500 flex flex-row justify-between fixed z-10">
-        <div class=""><img src="images/logo.webp" alt="error" class="size-12 bg-blue p-1 rounded-full"></div>
-        <div id="header"
-            class="flex flex-col  md:flex-row justify-center items-start md:items-center md:gap-x-6 gap-y-8 md:gap-y-0 absolute top-20 right-0 md:static md:opacity-100">
-            <ul
-                class="flex flex-col md:flex-row bg-indigo-700 md:bg-transparent justify-start md:justify-center items-start md:items-center gap-x-4 gap-y-5 md:gap-y-0 py-6 sm:py-10 md:py-0 px-12 sm:px-20 md:px-0 ">
-                <li> <a class="p-3 text-white text-base tracking-wide font-semibold" href="/"> Home</a></li>
-                <li> <a class="p-3 text-white text-base  tracking-wide font-semibold" href="about.html">
-                        About us</a>
-                </li>
-                <!-- <li> <a class="p-3 text-white text-base  tracking-wide font-semibold" href=""> Our
-                        Services</a></li> -->
-                <li> <a class="p-3 text-white text-base  tracking-wide font-semibold" href="blog.html">
-                        Blog</a></li>
-                <li> <a class="p-3 text-white text-base   tracking-wide font-semibold" href="contact.html">
-                        Contact
-                        us</a></li>
-
-                <a href="tel:+923003006220"
-                    class="px-3 py-2 mx-4 rounded-[100px] bg-transparent md:bg-indigo-950 border-2  border-indigo-950 text-white text-sm md:text-base  tracking-wide font-semibold">Call
-                    Now: +923003006220</a>
-            </ul>
-        </div>
-        <div class="flex place-items-center" id="menubar"><svg onclick="return showMenu()"
-                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff"
-                class="size-6 cursor-pointer ">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    <div class=""><img src="images/logo.webp" alt="error" class="size-12 bg-blue p-1 rounded-full"></div>
+        <div class="flex place-items-center" id="menubar">
+            <svg onclick="return showMenu()" class="size-6 cursor-pointer " xmlns="http://www.w3.org/2000/svg"
+                width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
+
         </div>
-    </nav>
+        <header class="py-4 px-10 w-full bg-gray-200 flex flex-row justify-between fixed top-0 z-10">
+            <div class=""><img src="images/logo.webp" alt="error" class="size-12 bg-blue p-1 rounded-full"></div>
+            <div id="header"
+                class="flex flex-col  md:flex-row justify-center items-start md:items-center md:gap-x-6 gap-y-8 md:gap-y-0 absolute top-20 right-0 md:static md:opacity-100">
+                <ul
+                    class="flex flex-col md:flex-row bg-gray-300 md:bg-transparent justify-start md:justify-center items-start md:items-center gap-x-4 gap-y-5 md:gap-y-0 py-6 sm:py-10 md:py-0 px-12 sm:px-20 md:px-0 ">
+                    <li> <a class="p-3 text-indigo-500 text-base lg:text-lg tracking-wide font-semibold" href="/">
+                            Home</a>
+                    </li>
+                    <li> <a class="p-3 text-indigo-500 text-base lg:text-lg   tracking-wide font-semibold"
+                            href="about.html">
+                            About us</a>
+                    </li>
+                    <!-- <li> <a class="p-3 text-white text-base  tracking-wide font-semibold" href=""> Our
+                    Services</a></li> -->
+                    <li> <a class="p-3 text-indigo-500 text-base lg:text-lg   tracking-wide font-semibold"
+                            href="blog.html">
+                            Blog</a></li>
+                    <li> <a class="p-3 text-indigo-500 text-base lg:text-lg    tracking-wide font-semibold"
+                            href="contact.html">
+                            Contact
+                            us</a></li>
+
+                    <a href="tel:+923003006220"
+                        class="px-3 py-2 mx-4 rounded-[100px] bg-transparent md:bg-indigo-500 border-2  border-indigo-500 text-indigo-500 md:text-white text-sm md:text-base  tracking-wide font-semibold">Call
+                        Now: +923003006220</a>
+                </ul>
+            </div>
+            <button id="menubar" class="button-one" id="button-one" aria-controls="primary-navigation"
+                aria-expanded="false">
+                <svg onclick="return showMenu()" class="size-6 cursor-pointer " xmlns="http://www.w3.org/2000/svg"
+                    width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </header>
     <section class=" px-10 py-32">
-        <h1 class="mb-12 text-left text-indigo-950 text-6xl font-semibold">Contact US</h1>
+        <h1 class="mb-12 text-left text-indigo-500 text-6xl font-semibold">Contact US</h1>
         <div class="py-8">
-            <p class="my-3 text-orange-500 text-base sm:text-xl font-semibold tracking-widest">+923003006220</p>
-            <p class="my-3 text-orange-500 text-base sm:text-xl font-semibold tracking-widest">+923332874135</p>
-            <p class="my-3 text-orange-500 text-base sm:text-xl font-semibold tracking-widest">+923213096661</p>
-            <p class="my-3 text-orange-500 text-base sm:text-xl font-semibold tracking-widest">+923456826761</p>
+            <p class="my-3 text-indigo-600 text-xl sm:text-2xl font-semibold tracking-widest">+923003006220</p>
+            <p class="my-3 text-indigo-600 text-xl sm:text-2xl font-semibold tracking-widest">+923332874135</p>
+            <p class="my-3 text-indigo-600 text-xl sm:text-2xl font-semibold tracking-widest">+923213096661</p>
+            <p class="my-3 text-indigo-600 text-xl sm:text-2xl font-semibold tracking-widest">+923456826761</p>
         </div>
         <div data-aos="fade-up">
             <p class="text-gray-400  text-sm sm:text-lg">wasimakram14071992@gmail.com</p>
@@ -96,17 +116,17 @@
     <section class="py-3">
         <h3 class="text-gray-900 text-lg font-semibold capitalize leading-loose mx-4 my-6 ">Head Office, Okara</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27452.68798422496!2d73.63312233472195!3d30.673784486589735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39181caee1400c71%3A0x26f25f3d273aaefd!2sDepalpur%2C%20Okara%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1719482484721!5m2!1sen!2s"  style=" width: 100%; height: 500px; border: none;" allowfullscreen="true"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </section>
-        <footer class="py-16 px-6 sm:px-14 bg-indigo-950 flex flex-col lg:flex-row lg:justify-evenly items-center">
+        <footer class="py-16 px-6 sm:px-14 bg-gray-100 flex flex-col lg:flex-row lg:justify-evenly items-center">
             <div data-aos="fade-up">
-                <h2 class="my-4 text-white font-bold text-2xl sm:text-6xl tracking-wider">Contact us</h2>
+                <h2 class="my-4 text-indigo-500 font-bold text-3xl sm:text-6xl tracking-wider">Contact us</h2>
                 <div class="py-8">
-                    <p class="my-3 text-orange-500 text-base sm:text-xl font-semibold tracking-widest">+923003006220</p>
-                    <p class="my-3 text-orange-500 text-base sm:text-xl font-semibold tracking-widest">+923332874135</p>
-                    <p class="my-3 text-orange-500 text-base sm:text-xl font-semibold tracking-widest">+923213096661</p>
-                    <p class="my-3 text-orange-500 text-base sm:text-xl font-semibold tracking-widest">+923456826761</p>
+                    <p class="my-3 text-indigo-600 text-xl sm:text-2xl font-semibold tracking-widest">+923003006220</p>
+                    <p class="my-3 text-indigo-600 text-xl sm:text-2xl font-semibold tracking-widest">+923332874135</p>
+                    <p class="my-3 text-indigo-600 text-xl sm:text-2xl font-semibold tracking-widest">+923213096661</p>
+                    <p class="my-3 text-indigo-600 text-xl sm:text-2xl font-semibold tracking-widest">+923456826761</p>
                 </div>
                 <div data-aos="fade-up">
-                    <p class="text-gray-400  text-sm sm:text-lg">wasimakram14071992@gmail.com</p>
+                    <p class="text-gray-500  text-base sm:text-xl">wasimakram14071992@gmail.com</p>
                 </div>
             </div>
             <form data-aos="fade-up" name="myForm" onsubmit="return sendMail()" class="my-4 py-8 flex flex-col gap-y-6">
@@ -121,11 +141,19 @@
                 <textarea rows="6" cols="12" name="message" id="" placeholder="Message" required spellcheck="true"
                     class="px-4 py-2 rounded-lg outline-none placeholder:text-indigo-950 text-sm sm:text-lg font-semibold"></textarea>
                 <input type="submit" value="SUBMIT"
-                    class="bg-orange-500 hover:bg-orange-600 py-4 text-white text-sm sm:text-lg font-semibold tracking-widest cursor-pointer rounded-lg transition-all">
+                    class="bg-indigo-500 hover:bg-indigo-600 py-4 text-white text-sm sm:text-lg font-semibold tracking-widest cursor-pointer rounded-lg transition-all">
             </form>
         </footer>
-            <!-- OVERLAY -->
-    <div id="overlay" onclick="return hideMenu()"></div>
+
+        <!-- OVERLAY -->
+        <div id="overlay" onclick="return hideMenu()"></div>
+        <!-- Whatsapp -->
+
+<a class="fixed bottom-4 left-4 size-12" href="intent://send/+923213096661#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">
+    <svg class="wow flash bg-[#1dcf1d] hover:bg-[#09b709] rounded-xl" data-wow-delay="5s" data-wow-duration="2s" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" style="visibility: visible; animation-duration: 2s; animation-delay: 5s; animation-name: flash;">
+        <path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd" fill="#fff"></path>
+        </svg>
+</a>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     
