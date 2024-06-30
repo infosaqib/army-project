@@ -37,10 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function showMenu() {
         overlay.classList.toggle('show');
         Header.classList.toggle('show');
-
-    }
-    function hideMenu() {
-        overlay.classList.remove('show');
-        Header.classList.remove('show');
+        document.body.classList.toggle('overflow-y-hidden');
+}
+function hideMenu() {
+    overlay.classList.remove('show');
+    Header.classList.remove('show');
+    document.body.classList.remove('overflow-y-hidden');
 
     }
