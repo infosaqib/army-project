@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Navbar
 
-    // console.log(overlay, Header)
 })   
- const overlay = document.getElementById('overlay');
-    const Header = document.getElementById('header');
+const overlay = document.getElementById('overlay');
+const Header = document.getElementById('header');
+console.log(Header)
     function showMenu() {
         overlay.classList.toggle('show');
-        Header.classList.toggle('flex');
+        Header.classList.toggle('show');
         document.body.classList.toggle('overflow-y-hidden');
 }
 function hideMenu() {
