@@ -162,23 +162,23 @@
         <p class="my-3 text-indigo-600 text-xl sm:text-2xl font-semibold tracking-widest">+923456826761</p>
       </div>
       <div data-aos="fade-up">
-        <p class="text-gray-500  text-base sm:text-xl">wasimakram14071992@gmail.com</p>
+        <p class="text-gray-500  text-base sm:text-xl">info@armydogcenterpk.com</p>
       </div>
     </div>
-    <form data-aos="fade-up" name="myForm" onsubmit="return sendMail()" class="my-4 py-8 flex flex-col gap-y-6">
+    <div name="myForm" data-aos="fade-up" class="my-4 py-8 flex flex-col gap-y-6">
       <div class="flex flex-col lg:flex-row gap-4">
-        <div> <input type="text" name="name" id="" placeholder="Name" required
-            class=" p-4 lg-p-4 rounded-lg outline-none placeholder:text-indigo-950 text-sm sm:text-lg font-semibold">
-        </div>
-        <div> <input type="email" name="email" id="" placeholder="Email address" required
-            class=" p-4 rounded-lg outline-none placeholder:text-indigo-950 text-sm sm:text-lg font-semibold">
-        </div>
+          <div> <input type="text" name="name" id="name" placeholder="Name" required
+                  class=" p-4 lg-p-4 rounded-lg outline-none placeholder:text-indigo-950 text-sm sm:text-lg font-semibold">
+          </div>
+          <div> <input type="email" name="email" id="email" placeholder="Email address" required
+                  class=" p-4 rounded-lg outline-none placeholder:text-indigo-950 text-sm sm:text-lg font-semibold">
+          </div>
       </div>
-      <textarea rows="6" cols="12" name="message" id="" placeholder="Message" required spellcheck="true"
-        class="px-4 py-2 rounded-lg outline-none placeholder:text-indigo-950 text-sm sm:text-lg font-semibold"></textarea>
-      <input type="submit" value="SUBMIT"
-        class="bg-indigo-500 hover:bg-indigo-600 py-4 text-white text-sm sm:text-lg font-semibold tracking-widest cursor-pointer rounded-lg transition-all">
-    </form>
+      <textarea rows="6" cols="12" name="message" id="message" placeholder="Message" required spellcheck="true"
+          class="px-4 py-2 rounded-lg outline-none placeholder:text-indigo-950 text-sm sm:text-lg font-semibold"></textarea>
+      <button onclick="sendMail()"
+          class="bg-indigo-500 hover:bg-indigo-600 py-4 text-white text-sm sm:text-lg font-semibold tracking-widest cursor-pointer rounded-lg transition-all">SUBMIT</button>
+  </div>
   </footer>
 
   <!-- OVERLAY -->
@@ -204,12 +204,17 @@
         fill-rule="evenodd" fill="#fff"></path>
     </svg>
   </a></div>
-  <!-- SCRIPTS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
-
-  <script src="./js/script.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <!-- SCRIPTS -->
+ <script src="./js/script.js"></script>
+ <script src="./js/index.js"></script>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script type="text/javascript">
+     (function () {
+         emailjs.init("hj0ktJGt8eMelJAtC");
+     })();
+ </script>
 </body>
 
 </html>

@@ -1,46 +1,46 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 html,
 body {
     height: 100%;
     width: 100%;
-    scroll-behavior: smooth;
-    /* overflow-x: hidden; */
+    scroll-behavior: smooth
 }
 
 #hero {
     width: 100%;
-    background-color: #000000;
+    background-color: #000;
     background-image: url("../images/herdo.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: cover
 }
-#blog, #about{
+
+#blog,
+#about {
     height: 50%;
     width: 100%;
-    background-color: #000000;
+    background-color: #000;
     background-image: url("../images/herdo.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: cover
 }
 
 #header.show {
     opacity: 1;
-    display: flex;
+    display: flex
 }
 
 #overlay {
-    /* opacity: 0; */
     display: none;
-    transition: all ease 1s;
+    transition: all ease 1s
 }
 
 #overlay.show {
@@ -51,20 +51,22 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     #header {
         opacity: 0;
-        display: none;
+        display: none
     }
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 800px) {
     #menubar {
         opacity: 0;
-        display: none;
+        display: none
     }
 }
+
+/*# sourceMappingURL=style.css.map */
