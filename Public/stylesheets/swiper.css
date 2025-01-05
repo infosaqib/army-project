@@ -13,8 +13,11 @@ html,
       padding: 0;
     }
 
-    .swiper {
-      height: 100%;
+    .myFirstSwiper {
+      height: 80%;
+    }
+    .mySecondSwiper{
+      height: 50%;
     }
     .swiper-wrapper{
         position: relative;
