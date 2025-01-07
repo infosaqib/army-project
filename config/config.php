@@ -1,8 +1,11 @@
 <?php
+
+
+
 $servername = "localhost";
 $username = "root"; 
 $password = ""; 
-$dbname = "my_php_website_db";
+$dbname = "dogcenter_website_db";
 
 try {
     $pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
