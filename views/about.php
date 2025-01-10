@@ -10,7 +10,7 @@
      <section class="text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-8 md:flex-row flex-col-reverse items-center">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            <img class="object-cover object-center rounded" alt="hero" src="images/dogcard-2.webp">
           </div>
   
           <div
@@ -66,7 +66,7 @@
               tumeric truffaut hexagon try-hard chambray. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sunt? Illum ex ducimus dicta. Ipsam corporis iure inventore asperiores illo dolorum perspiciatis dignissimos reiciendis sequi hic, vel totam sint laudantium voluptate unde neque accusamus aliquam rerum officia. Repudiandae praesentium quaerat temporibus! Sit possimus enim asperiores.</p>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 lg:pl-24 md:pl-16 mb-10 md:mb-0">
-            <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            <img class="object-cover object-center rounded" alt="hero" src="images/dogcard-3.webp">
           </div>
         </div>
       </section>

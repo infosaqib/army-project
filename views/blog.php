@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +20,7 @@
     <section class="p-6 flex flex-row-reverse flex-wrap items-center justify-center gap-8 overflow-x-hidden">
         <!-- BLOG POST TEMPLATE -->
         <?php
+        global $pdo;
 include 'config/config.php';
 
 try {
@@ -58,12 +60,10 @@ try {
                     <span><?= $formatted_date ?></span>
                 </p>
                 <p class="my-4 text-sm text-gray-500"><?= $description ?></p>
-                <a href="<?= $blog['url'] ? htmlspecialchars($blog['url']) : '#' ?>" class="inline-flex items-center text-lg text-teal-500 hover:underline">
-                    Read more
-                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                    </svg>
-                </a>
+                <a href="blogpost.php?id=<?= $blog['id'] ?>" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+    Read more
+    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">→</span>
+</a>
             </div>
         </div>
         <?php
