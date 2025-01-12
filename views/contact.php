@@ -12,10 +12,7 @@
         <div class="flex flex-col items-center justify-center text-center gap-4 p-4">
             <h2 class="my-4 text-teal-500 font-bold text-2xl sm:text-5xl tracking-wider">Get in touch </h2>
             <h3 class="text-lg sm:text-xl text-gray-800 font-semibold text-center">Contact us : 03003006220 / 03453406220</h3>
-            <p class="text-sm text-gray-600 w-[75%] text-center">Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Minus a, alias ad ducimus porro voluptates animi facilis tempore voluptatum atque consequuntur
-                quaerat sit asperiores repudiandae nobis officiis sunt veniam. Odit pariatur dolore sit! Dicta,
-                blanditiis nesciunt.</p>
+            <p class="mb-4 leading-relaxed text-gray-600 text-sm w-[75%] text-center">For inquiries or to learn more about our services, please reach out to us today.</p>
         </div>
 
 

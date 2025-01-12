@@ -55,9 +55,7 @@
           class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-teal-500">OUR MISSION
           </h1>
-          <p class="mb-4 leading-relaxed text-gray-600 text-lg">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant
-            cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic
-            tumeric truffaut hexagon try-hard chambray. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident eligendi dolor ratione nihil iure neque, debitis cum minus modi impedit soluta maiores adipisci architecto dicta perspiciatis non alias voluptate, nobis eius doloribus ipsum excepturi voluptatibus. Temporibus laboriosam explicabo ab, tempora quasi minus exercitationem assumenda.</p>
+          <p class="mb-4 leading-relaxed text-gray-600 text-lg">Our mission at the Army Dog Center is to honor the service and dedication of military dogs by providing them with exceptional training, care, and rehabilitation. We aim to enhance their skills and ensure their well-being, both during and after their service. By fostering a supportive environment, we strive to strengthen the bond between dogs and their handlers, promoting teamwork and trust. We are committed to making a positive impact on the lives of these remarkable animals, ensuring they receive the love and attention they deserve throughout their lives.</p>
         </div>
       </div>
     </section>

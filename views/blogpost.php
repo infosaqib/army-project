@@ -111,10 +111,10 @@ foreach ($related_posts as $related) {
             <img src="admin/uploads/' . ($related['image'] ? htmlspecialchars($related['image']) : 'default-thumbnail.jpg') . '"
                 class="mb-5 rounded-lg w-full h-64" alt="Related Post Image">
         </a>
-        <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 ">
+        <h2 class="mb-2 mx-2 text-xl font-bold leading-tight text-gray-900 ">
             <a href="blogpost.php?id=' . $related['id'] . '">' . htmlspecialchars($related['title']) . '</a>
         </h2>
-        <p class="mb-4 text-gray-500 ">' . 
+        <p class="mb-4 mx-2 text-gray-500 ">' . 
             (strlen(strip_tags($related['description'])) > 100 
                 ? substr(strip_tags($related['description']), 0, 100) . '...' 
                 : strip_tags($related['description'])) . 

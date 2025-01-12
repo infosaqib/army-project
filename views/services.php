@@ -13,9 +13,7 @@
             class="lg:flex-grow md:w-1/2 flex flex-col md:items-start items-center text-left">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-teal-600">Our Services
             </h1>
-            <p class="mb-4 leading-relaxed text-gray-600 text-lg">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant
-              cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic
-              tumeric truffaut hexagon try-hard chambray Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem autem facilis quis illo, quae, doloremque animi necessitatibus ut consequuntur inventore sequi voluptates deleniti placeat. Commodi quam unde nam. Quidem, suscipit perspiciatis. Nisi enim beatae aperiam quos.</p>
+            <p class="mb-4 leading-relaxed text-gray-600 text-lg">At the Army Dog Center, we offer a comprehensive range of services tailored to meet the unique needs of military working dogs. Our expert training programs focus on obedience, agility, and specialized skills essential for military operations. We provide top-notch veterinary care, including routine check-ups and emergency services, ensuring the health and well-being of every dog. Additionally, our rehabilitation services support dogs recovering from injuries or trauma, helping them regain their strength and confidence. We are dedicated to enhancing the quality of life for military dogs and their handlers through our specialized offerings.</p>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 lg:pl-24 md:pl-16  w-5/6 mb-10 md:mb-0">
             <img class="object-cover object-center rounded" alt="hero" src="images/dogcard-1.webp">
@@ -30,9 +28,7 @@
           </div>
           <div
             class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-left">
-            <p class="mb-4 leading-relaxed text-gray-600 text-lg">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant
-              cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic
-              tumeric truffaut hexagon try-hard chambray Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sapiente ad, maiores reprehenderit dolore tempore eaque tenetur inventore praesentium qui ipsam asperiores necessitatibus fugit eveniet accusantium perferendis saepe reiciendis. Pariatur, dolor fuga dolorem perferendis quibusdam repellendus!</p>
+            <p class="mb-4 leading-relaxed text-gray-600 text-lg">We highlight the inspiring stories of military dogs who have successfully transitioned to civilian life. These dogs, once heroes on the battlefield, now serve in various roles, including therapy and search and rescue. Our program showcases their adaptability and the vital skills they bring to their new environments. Through specialized training and rehabilitation, we prepare these dogs for their next chapter, ensuring they continue to make a difference in the lives of those around them. Their journeys exemplify resilience and the enduring bond between dogs and humans.</p>
           </div>
         </div>
       </section>
@@ -55,21 +51,82 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </summary>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Hyderabad</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Karachi</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Hub Chowki</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Thatta</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Mithi</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Badin</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Sukkur</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Mirpur Khas</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Umar Kot</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Shikarpur</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Nawabshah</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Moro</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Dadu</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Jacobabad</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Larkana</li>
+                        <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Sanghar</li>
+             </details>
+       
+             <details class="mx-4 group [&_summary::-webkit-details-marker]:hidden" open>
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
+            <h2 class="font-bold text-xl text-teal-600 ">Army Dog Center Balochistan</h2>
   
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Karachi</li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Hyderabad</li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Sukkur</li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Larkana</li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Nawabshah</li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Shikarpur</li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Jacobabad</li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Kashmour</li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Dadu</li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Badin</li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Jamshoro</li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Mirpur khas</li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Panu aqil </li>
-                          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Thatta</li>
+            <svg class="size-5 shrink-0 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+  
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Quetta</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Turbat</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Khuzdar</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Gwadar </li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center kalat</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center lora lai</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Zhob</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Chaman</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Dalbandin</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Panjgur</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Kohlu</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Mussa khel</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Barkhan</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Dera bugti </li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Ziarat </li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Qila abdullah </li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Taftan</li>
+        </details>
+             <details class="mx-4 group [&_summary::-webkit-details-marker]:hidden" open>
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
+            <h2 class="font-bold text-xl text-teal-600 ">Army Dog Center Punjab</h2>
+  
+            <svg class="size-5 shrink-0 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+  
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Lahore</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Islamabad</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Rawalpindi</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Multan</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Faisalabad</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Sialkot</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Gujranwala</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Bahawalpur</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Sargodha</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Sheikhupura</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Jhelum</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Kasur</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center D G Khan</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Bahawalnagar</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Attock</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Mianwali</li>
+          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Khanewal</li>
+          
         </details>
         <details class="mx-4 group [&_summary::-webkit-details-marker]:hidden" open>
           <summary
@@ -100,65 +157,8 @@
         </details>
        
         
-        <details class="mx-4 group [&_summary::-webkit-details-marker]:hidden" open>
-          <summary
-            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
-            <h2 class="font-bold text-xl text-teal-600 ">Army Dog Center Balochistan</h2>
-  
-            <svg class="size-5 shrink-0 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg"
-              fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </summary>
-  
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Quetta</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Turbat</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Khuzdar</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Gwadar </li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center kalat</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center lora lai</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Zhob</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Chaman</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Dalbandin</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Panjgur</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Kohlu</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Mussa khel</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Barkhan</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Dera bugti </li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Ziarat </li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Qila abdullah </li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Taftan</li>
-        </details>
-        <details class="mx-4 group [&_summary::-webkit-details-marker]:hidden" open>
-          <summary
-            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
-            <h2 class="font-bold text-xl text-teal-600 ">Army Dog Center Punjab</h2>
-  
-            <svg class="size-5 shrink-0 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg"
-              fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </summary>
-  
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Lahore</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Islamabad</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Rawalpindi</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Multan</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Faisalabad</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Sialkot</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Gujranwala</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Bahawalpur</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Sargodha</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Sheikhupura</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Jhelum</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Kasur</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center D G Khan</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Bahawalnagar</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Attock</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Mianwali</li>
-          <li class="text-gray-500 list-disc font-semibold my-3 ml-4">Army Dog Center Khanewal</li>
-          
-        </details>
+       
+      
       </div>
     </section>
       <!------- STATISTICS SECTION --------->

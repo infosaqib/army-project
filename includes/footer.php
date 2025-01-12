@@ -7,8 +7,7 @@
               </div>
   
               <p class="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
-                cum itaque neque.
+              Committed to enhancing the lives of military dogs through specialized training, care, and rehabilitation services.
               </p>
   
               <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
@@ -84,11 +83,11 @@
   
                 <ul class="mt-8 space-y-4 text-sm">
                   <li>
-                    <a class="text-gray-700 transition hover:text-gray-700/75" href="/blog"> Our Blog </a>
+                    <a class="text-gray-700 transition hover:text-gray-700/75" href="/blog.php"> Our Blog </a>
                   </li>
   
                   <li>
-                    <a class="text-gray-700 transition hover:text-gray-700/75" href="/about"> About us </a>
+                    <a class="text-gray-700 transition hover:text-gray-700/75" href="/about.php"> About us </a>
                   </li>
   
                 </ul>
