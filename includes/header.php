@@ -24,24 +24,24 @@
 <link rel="stylesheet" href="../dist/output.css">
 <link rel="stylesheet" href="../stylesheets/style.css">
 <!-- header content can go here -->
-<header class="py-4 px-10 w-full bg-gray-200 flex flex-row justify-between fixed top-0 z-10">
-<a href="/army/index.php"><img src="images/logo-armydog.webp" alt="error" class="size-12 bg-blue p-1 rounded-full"></a>        
+<header class="py-4 px-10 w-full bg-gray-200 flex flex-row justify-between z-10">
+<a href="/army/"><img src="images/logo-armydog.webp" alt="error" class="size-12 bg-blue p-1 rounded-full"></a>        
 <div id="headerMenu"
 class="md:flex flex-col  md:flex-row justify-center items-start md:items-center md:gap-x-6 gap-y-8 md:gap-y-0 absolute top-20 right-0 md:static md:opacity-100">
 <ul
 class="flex flex-col md:flex-row bg-gray-300 md:bg-transparent justify-start md:justify-center items-start md:items-center gap-x-4 gap-y-5 md:gap-y-0 py-6 sm:py-10 md:py-0 px-12 sm:px-20 md:px-0 ">
-<li> <a class="p-3 text-indigo-500 text-base lg:text-lg tracking-wide font-semibold" href="/army/index.php">
+<li> <a class="p-3 text-indigo-500 text-base lg:text-lg tracking-wide font-semibold" href="/army/">
         Home</a>
 </li>
 <li> <a class="p-3 text-indigo-500 text-base lg:text-lg   tracking-wide font-semibold"
-        href="/army/about.php">
+        href="/army/about">
         About us</a>
 </li>
 <li> <a class="p-3 text-indigo-500 text-base lg:text-lg   tracking-wide font-semibold"
-        href="/army/blog.php">
+        href="/army/blog">
         Blog</a></li>
 <li> <a class="p-3 text-indigo-500 text-base lg:text-lg    tracking-wide font-semibold"
-        href="/army/contact.php">
+        href="/army/contact">
         Contact
         us</a></li>
 

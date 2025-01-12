@@ -46,14 +46,13 @@
 
 <body>
   <div class="overflow-hidden w-full" id="container">
-  <?php include 'includes/header.php'; ?>
-  <section id="" class=" flex flex-col items-center justify-center px-10 pt-32 pb-6">
+  <section id="" class=" flex flex-col items-center justify-center px-10 py-6">
     <h1 class="mb-6 text-left text-indigo-500 text-6xl text-center font-semibold">OUR BLOG</h1>
     <p class="text-lg text-gray-400 font-semibold text-center w-1/2">Discover the dedicated services of our Army Dog Center, showcasing the role of trained dogs in security, search and rescue, and defense operations.</p>
 
   </section>
  
-  <section class="grid grid-cols-3 gap-4 px-12 py-8">
+   <section class="grid gap-4 px-12 py-8" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
     <?php
     include 'config/config.php';
 
@@ -67,7 +66,7 @@
             ?>
             <article class="overflow-hidden rounded-lg border border-gray-500 bg-white shadow-sm">
                 <?php if ($image): ?>
-                    <img alt="<?= $title ?>" src="admin/uploads/<?= $image ?>" class="h-44 w-full object-fill" />
+                     <img alt="<?= $title ?>" src="admin/uploads/<?= $image ?>" class="h-52 w-full object-fill" />
                 <?php endif; ?>
                 
                 <div class="p-4 sm:p-6">
@@ -75,10 +74,10 @@
                     <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
                         <?= substr($description, 0, 150) . '...' ?>
                     </p>
-                    <a href="<?= $url ?>" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                        Find out more
-                        <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">→</span>
-                    </a>
+                    <a href="blogpost.php?id=<?= $blog['id'] ?>" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+    Read more
+    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">→</span>
+</a>
                 </div>
             </article>
             <?php
@@ -99,7 +98,6 @@
     </div>
   </section>
   
-  <?php include 'includes/footer.php'; ?>
 
   </div>
  <!-- SCRIPTS -->

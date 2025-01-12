@@ -43,10 +43,9 @@
 <body>   
     <div class="overflow-hidden w-full" id="container">
 
-   <?php include 'includes/header.php'; ?>
 
 
-   <section id="" class=" flex flex-col items-center justify-center px-10 pt-32 pb-6">
+   <section id="" class=" flex flex-col items-center justify-center px-10 py-6">
     <h1 class="mb-6 text-left text-indigo-500 text-6xl text-center font-semibold">ABOUT US</h1>
     <p class="text-lg text-gray-400 font-semibold text-center w-1/2">The Army Dog Center trains dogs for vital military and security roles, enhancing safety and operational efficiency.</p>
 
@@ -202,7 +201,6 @@
     </section>
   
     <!-- FOOTER -->
-    <?php include 'includes/footer.php'; ?>
 
  <!-- SCRIPTS -->
  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>

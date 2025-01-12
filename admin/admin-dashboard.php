@@ -16,8 +16,17 @@ if (isset($_POST['submit'])) {
         $description = $_POST['content'];
         $image = '';
         
-        // Extract image src from the description using regex
-        if (preg_match('/<img[^>]+src=["\'](?:[^"\']*\/)?uploads\/([^"\']+)["\']/', $description, $matches)) {
+        // Update image `src` paths in the description to include `admin/uploads/`
+        $description = preg_replace_callback(
+            '/<img[^>]+src=["\'](?:uploads\/)([^"\']+)["\']/',
+            function ($matches) {
+                return '<img src="admin/uploads/' . $matches[1] . '"';
+            },
+            $description
+        );
+        
+        // Extract the first image src for saving in the `image` column
+        if (preg_match('/<img[^>]+src=["\']admin\/uploads\/([^"\']+)["\']/', $description, $matches)) {
             $image = $matches[1];
         }
         

@@ -43,8 +43,7 @@
 
 <body class="">
     <div class="overflow-hidden w-full" id="container">
-    <?php include 'includes/header.php'; ?>
-        <section class=" px-10 pt-32 pb-6">
+        <section class=" px-10 py-6">
             <div class="flex flex-col justify-center items-center">
             <h1 class=" mb-6 text-indigo-500 text-6xl font-semibold text-center">Contact Us</h1>
             <p class="text-center text-lg text-gray-400 font-semibold text-center w-1/2">We want to hear from you! Whether you have questions, suggestions, or inquiries about our services, feel free to reach out.</p>
@@ -84,7 +83,6 @@
                 style=" width: 100%; height: 500px; border: none;" allowfullscreen="true" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <?php include 'includes/footer.php'; ?>
 
        
     </div>
